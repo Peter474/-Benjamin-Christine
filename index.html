@@ -9,33 +9,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="bg-gray-100">
 
   <!-- Navbar -->
-  <nav class="fixed w-full bg-white shadow-md z-50">
-    <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+<nav class="fixed w-full bg-white shadow-md z-50">
+  <div class="max-w-6xl mx-auto px-4 flex justify-between items-center h-16">
+    
+    <!-- Left Side: Logo + Facebook Icon -->
+    <div class="flex items-center space-x-3">
       <div class="text-xl font-bold text-pink-600">Benja & Koki Wedding</div>
-      <div class="space-x-6 hidden md:flex">
-        <a href="#home" class="text-gray-700 hover:text-pink-600 font-medium">Home</a>
-        <a href="#schedule" class="text-gray-700 hover:text-pink-600 font-medium">Schedule</a>
-        <a href="#guestbook" class="text-gray-700 hover:text-pink-600 font-medium">Guestbook</a>
-      </div>
 
-      <!-- Mobile Menu Button -->
-      <button id="menu-btn" class="md:hidden focus:outline-none text-gray-700 text-2xl">
-        ☰
-      </button>
+      <!-- Facebook Icon -->
+      <a href="https://www.facebook.com/share/1FGqm7Gpge/" target="_blank"
+         class="text-pink-600 hover:text-pink-800 transition">
+        <i class="fab fa-facebook text-2xl"></i>
+      </a>
     </div>
 
-    <!-- Mobile Menu Box -->
-    <div id="mobile-menu" class="hidden md:hidden bg-gray-100 shadow-md">
-      <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Home</a>
-      <a href="#schedule" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Schedule</a>
-      <a href="#guestbook" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Guestbook</a>
+    <!-- Center (or Right): Navbar Links -->
+    <div class="space-x-6 hidden md:flex">
+      <a href="#home" class="text-gray-700 hover:text-pink-600 font-medium">Home</a>
+      <a href="#schedule" class="text-gray-700 hover:text-pink-600 font-medium">Schedule</a>
+      <a href="#guestbook" class="text-gray-700 hover:text-pink-600 font-medium">Guestbook</a>
     </div>
-  </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden focus:outline-none text-gray-700 text-2xl">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Menu Box -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-100 shadow-md">
+    <a href="#home" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Home</a>
+    <a href="#schedule" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Schedule</a>
+    <a href="#guestbook" class="block px-4 py-2 text-gray-700 hover:bg-pink-100">Guestbook</a>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
 <section id="home" class="relative w-full h-screen flex flex-col items-center justify-end text-white pb-32"
@@ -179,5 +193,6 @@
   </script>
 </body>
 </html>
+
 
 
